@@ -1,9 +1,5 @@
 from tkinter import *
 from tkinter import ttk
-
-from Application.model.entities.Classroom import Classroom
-from Application.model.entities.DayWeek import DayWeek
-from Application.model.service.ClassroomService import ClassroomService
 from Application.screen.InsertClassroomScreen import InsertClassroomScreen
 
 
@@ -45,7 +41,9 @@ class MainScreen:
         self.styleController.map("button.TButton", background=[('active', '#1C1C1C')])
 
     def openInsertClassroomScreen(self):
+
         InsertClassroomScreen().main()
+        self.window.children.clear()
 
 
     

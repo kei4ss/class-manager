@@ -6,7 +6,6 @@ from Application.screen.MainScreen import MainScreen
 def main():
     ManagerDataBase.initializeDatabase()
     MainScreen().main()
-    #ManagerDataBase.deleteDatabase()
 
 if __name__ == '__main__':
     main()
